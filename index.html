@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thameem Ansari is a senior full-stack developer and engineering leader building thoughtful web products, scalable platforms, and dependable cloud infrastructure."
+    />
+    <meta name="theme-color" content="#10110f" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "light"
+          : "dark";
+        document.documentElement.dataset.theme =
+          savedTheme === "light" || savedTheme === "dark" ? savedTheme : preferredTheme;
+      } catch {
+        document.documentElement.dataset.theme = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+      }
+    </script>
+    <title>Thameem Ansari — Full-stack developer & engineering leader</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Thameem Ansari home">
+        <svg class="wordmark-symbol" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M21 15c7 3 11 9 11 16 0 7-5 12-12 12-5 0-9-2-12-6 7 2 12-1 16-6 5-6 4-12-3-16Z" />
+          <path d="m28 1 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" />
+        </svg>
+        <span class="wordmark-name">THAMEEM ANSARI</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#work">Selected work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to light theme"
+          title="Switch to light theme"
+        >
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-label">LIGHT THEME</span>
+        </button>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow">
+            <span class="status-dot"></span>
+            <span>CHENNAI, INDIA <span class="eyebrow-divider">/</span> OPEN TO WHAT’S NEXT</span>
+          </div>
+          <h1 id="hero-title">I build digital<br />things that <span>work</span><i>.</i></h1>
+          <p class="hero-intro">
+            Senior full-stack developer and engineering leader bringing ambitious products to life—from the first API to the final deployment, with a strong focus on DevOps, cloud infrastructure, CI/CD automation, and reliable production delivery.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="Resume_Thameem.pdf" target="_blank" rel="noreferrer">
+              Download Resume <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>9<span>+</span></strong><small>YEARS BUILDING</small></div>
+            <span class="proof-rule" aria-hidden="true"></span>
+            <div class="proof-item"><strong>Full<span>-</span>stack</strong><small>THOUGHT TO SHIP</small></div>
+            <span class="proof-rule" aria-hidden="true"></span>
+            <div class="proof-item"><strong>People<span>+</span>product</strong><small>LEADERSHIP</small></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of connected product and infrastructure layers">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-cross cross-one"></div>
+          <div class="art-cross cross-two"></div>
+          <div class="art-core">
+            <span class="core-kicker">FROM IDEA</span>
+            <span class="core-symbol" aria-hidden="true">✳</span>
+            <span class="core-kicker">TO IMPACT</span>
+          </div>
+          <div class="orbit-label label-product"><span class="label-icon">◫</span><span>PRODUCT<small>Thoughtful by design</small></span></div>
+          <div class="orbit-label label-engineering"><span class="label-icon">⌘</span><span>ENGINEERING<small>Built to scale</small></span></div>
+          <div class="orbit-label label-cloud"><span class="label-icon">↗</span><span>CLOUD & DEVOPS<small>Ready for the real world</small></span></div>
+          <div class="art-index">A FULL-STACK PERSPECTIVE <span>✳</span> 001—003</div>
+        </div>
+        <a class="scroll-cue" href="#work"><span></span>SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="work-section section-shell section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">01</span> SELECTED WORK</p>
+            <h2 id="work-title">Products with a purpose<span>.</span></h2>
+          </div>
+          <p class="section-aside">A few problems I’ve helped solve—<br />with product thinking and code.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-renu">
+            <div class="project-visual visual-renu" aria-hidden="true">
+              <div class="visual-top"><span>renu</span><span class="visual-tag">HEALTHCARE / PLATFORM</span></div>
+              <div class="renu-panel">
+                <span class="renu-icon">r.</span>
+                <div><span class="visual-caption">YOUR HEALTH, IN ONE PLACE</span><strong>Care that<br />moves with you.</strong><span class="tiny-pill">Patient-first care <b>↗</b></span></div>
+                <div class="renu-orb"></div>
+              </div>
+              <div class="visual-footer"><span>API DEVELOPMENT</span><span>DOCKER</span><span>AWS ECS FARGATE</span><span>CI/CD</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>Renu App <span>/ SOH</span></h3><span class="project-duration">24 MONTHS</span></div>
+              <p>A digital healthcare platform that makes it easier for patients to connect with medical services and manage their health records.</p>
+              <div class="tag-list"><span>Laravel APIs</span><span>Docker</span><span>AWS Fargate</span><span>CI/CD</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-deliverx">
+            <div class="project-visual visual-deliverx" aria-hidden="true">
+              <div class="visual-top"><span class="deliverx-logo">Delive<span>Rx</span></span><span class="visual-tag">HEALTHCARE / AI</span></div>
+              <div class="deliverx-window">
+                <div class="window-bar"><span></span><span></span><span></span><small>Clinical supply intelligence</small></div>
+                <div class="window-body">
+                  <div class="window-copy"><span class="visual-caption">SMARTER SUPPLY, BETTER CARE</span><strong>Find the right<br />place to deliver.</strong><span>AI-powered audience & location discovery</span></div>
+                  <div class="map-card"><div class="map-lines"></div><span class="map-pin pin-a">+</span><span class="map-pin pin-b">+</span><span class="map-pin pin-c">+</span><span class="map-label">TARGET AREA</span></div>
+                </div>
+                <div class="chat-chip"><span>✳</span> chatDRX <small>AI assistant</small><b>↗</b></div>
+              </div>
+              <div class="visual-footer"><span>LARAVEL</span><span>AI ASSISTANT</span><span>RESPONSIVE WEB</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>DeliveRx</h3><span class="project-duration">2 MONTHS</span></div>
+              <p>A responsive clinical-products marketplace concept, with a custom AI assistant and chatbot to help identify audiences and suitable locations.</p>
+              <div class="tag-list"><span>Laravel</span><span>AI assistant</span><span>Responsive UI</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-nexcare">
+            <div class="project-visual visual-nexcare" aria-hidden="true">
+              <div class="visual-top"><span class="nex-logo"><span>n</span> nex-care</span><span class="visual-tag">CHILDCARE / MULTI-TENANT CRM</span></div>
+              <div class="nex-dashboard">
+                <div class="dash-sidebar"><span class="dash-brand">n.</span><i></i><i></i><i></i><i></i></div>
+                <div class="dash-main"><div class="dash-greeting"><span>MONDAY, 09:41 AM</span><strong>Good morning, Sarah <b>✳</b></strong><small>Here’s what’s happening across your centers.</small></div>
+                  <div class="dash-stats"><div><small>CHILDREN TODAY</small><b>128</b><span>Across 4 centers</span></div><div><small>STAFF ON SITE</small><b>24</b><span class="stat-up">All centers covered</span></div><div class="dash-ring"><span>4/4<small>centers open</small></span></div></div>
+                  <div class="dash-chart"><span>WEEKLY ATTENDANCE</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                </div>
+              </div>
+              <div class="visual-footer"><span>LARAVEL</span><span>MULTI-TENANT</span><span>DIGITALOCEAN</span><span>CI/CD</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>Nex-care</h3><span class="project-duration">18 MONTHS</span></div>
+              <p>A large-scale, multi-tenant CRM helping childcare providers manage their own organizations, users, and childcare homes.</p>
+              <div class="tag-list"><span>Laravel</span><span>Multi-tenant CRM</span><span>DigitalOcean</span><span>CI/CD</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-veyes">
+            <div class="project-visual visual-veyes" aria-hidden="true">
+              <div class="visual-top"><span class="veyes-logo">vey<span>e</span>s</span><span class="visual-tag">INSURANCE / CRM</span></div>
+              <div class="veyes-frame">
+                <div class="veyes-sidebar"><b>V.</b><i></i><i></i><i></i></div>
+                <div class="veyes-content"><span class="visual-caption">INSPECTION IN PROGRESS</span><strong>Vehicle inspection</strong><div class="video-preview"><div class="video-car"></div><span class="recording"><i></i> REC 00:18</span><span class="video-play">▶</span><span class="video-label">LIVE VIDEO CALL</span></div><div class="video-controls"><span>◉</span><span>▣</span><span class="control-end">End call</span></div></div>
+                <div class="veyes-details"><span>LEAD DETAILS</span><b>Policy #VX-2048</b><small>Inspection status</small><em>In progress</em><small>Captured images</small><b>08 files</b></div>
+              </div>
+              <div class="visual-footer"><span>REAL-TIME VIDEO</span><span>IMAGE COMPRESSION</span><span>AMAZON S3</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>Veyes</h3><span class="project-duration">12 MONTHS</span></div>
+              <p>A multi-company insurance-leads CRM, with real-time video inspections, efficient image compression, and Amazon S3 file storage.</p>
+              <div class="tag-list"><span>Real-time video</span><span>Image compression</span><span>Amazon S3</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-anvika">
+            <div class="project-visual visual-anvika" aria-hidden="true">
+              <div class="visual-top"><span>AnvikaClinic</span><span class="visual-tag">HEALTHCARE / PORTALS</span></div>
+              <div class="anvika-window">
+                <div class="anvika-sidebar">
+                  <span class="anvika-mark">a.</span>
+                  <span class="anvika-nav active">Overview</span>
+                  <span class="anvika-nav">Appointments</span>
+                  <span class="anvika-nav">My profile</span>
+                </div>
+                <div class="anvika-main">
+                  <span class="visual-caption">YOUR CARE, CONNECTED</span>
+                  <strong>Appointments</strong>
+                  <div class="anvika-appointment"><span class="anvika-date">MON<br /><b>18</b></span><span><b>Book a visit</b><small>Find a time that works for you</small></span><i>↗</i></div>
+                  <div class="anvika-portals"><span>DOCTOR PORTAL</span><span>PATIENT PORTAL</span></div>
+                </div>
+              </div>
+              <div class="visual-footer"><span>APPOINTMENT BOOKING</span><span>DOCTOR PORTAL</span><span>PATIENT PORTAL</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>AnvikaClinic</h3></div>
+              <p>A clinic platform with appointment booking and dedicated portals for doctors and patients.</p>
+              <div class="tag-list"><span>Appointment booking</span><span>Doctor portal</span><span>Patient portal</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-abbey">
+            <div class="project-visual visual-abbey" aria-hidden="true">
+              <div class="visual-top"><span class="abbey-logo">ABBEY <b>CONSTRUCTION</b></span><span class="visual-tag">CONSTRUCTION / FILE CRM</span></div>
+              <div class="abbey-workspace">
+                <div class="abbey-sidebar">
+                  <span class="abbey-sidebar-mark">A</span>
+                  <i></i><i></i><i></i>
+                  <span class="abbey-sidebar-label">PROJECTS</span>
+                </div>
+                <div class="abbey-main">
+                  <span class="visual-caption">CLIENT WORKSPACE</span>
+                  <strong>Project overview</strong>
+                  <div class="abbey-project-row"><span class="abbey-project-icon">01</span><span><b>Project files</b><small>Plans, documents & updates</small></span><i>↗</i></div>
+                  <div class="abbey-project-row"><span class="abbey-project-icon">02</span><span><b>Client projects</b><small>Work organized by client</small></span><i>↗</i></div>
+                </div>
+              </div>
+              <div class="visual-footer"><span>MULTI-CLIENT PROJECTS</span><span>FILE MANAGEMENT</span><span>CRM</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-title-row"><h3>Abbey Construction</h3></div>
+              <p>A multi-client project management and file CRM solution for organizing construction work and project files.</p>
+              <div class="tag-list"><span>Project management</span><span>Multi-client CRM</span><span>File management</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section section-shell section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">02</span> HOW I WORK</p>
+            <h2 id="about-title">A broad view.<br /><span>A builder’s mindset.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p class="about-lead">Great software is more than code that compiles. It’s a useful product, a team that can move confidently, and an infrastructure that’s ready for what comes next.</p>
+            <p>With 9+ years across web development, platform delivery, and team leadership, I’m comfortable moving between hands-on engineering and the bigger picture—working with clients, mentoring developers, and keeping projects moving from idea to production.</p>
+          </div>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card">
+            <span class="capability-index">01 / BUILD</span>
+            <span class="capability-icon icon-build" aria-hidden="true">⌘</span>
+            <h3>Full-stack<br />engineering</h3>
+            <p>Reliable backends, considered interfaces, and APIs that make complex workflows feel simple.</p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-index">02 / SHIP</span>
+            <span class="capability-icon icon-cloud" aria-hidden="true">↗</span>
+            <h3>Cloud &<br />DevOps</h3>
+            <p>Practical automation and stable infrastructure that keeps products moving after launch.</p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-index">03 / LEAD</span>
+            <span class="capability-icon icon-lead" aria-hidden="true">✳</span>
+            <h3>Teams &<br />delivery</h3>
+            <p>Hands-on leadership that balances thoughtful technical decisions with clear, steady delivery.</p>
+          </article>
+        </div>
+
+        <div class="skills-section" aria-labelledby="skills-title">
+          <div class="skills-heading">
+            <div>
+              <p class="eyebrow">THE TOOLS I WORK WITH</p>
+              <h3 id="skills-title">A versatile toolkit<span>.</span></h3>
+            </div>
+            <div class="skills-controls" aria-label="Scroll through skills">
+              <button class="skills-arrow" type="button" data-scroll="-1" aria-label="Scroll skills left">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <button class="skills-arrow" type="button" data-scroll="1" aria-label="Scroll skills right">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+            </div>
+          </div>
+          <div class="skills-carousel" tabindex="0" role="region" aria-label="Technical skills. Scroll horizontally to explore.">
+            <article class="skill-card">
+              <span class="skill-art skill-php" aria-hidden="true"><img src="icons/skill-php.svg" alt="" /></span>
+              <span class="skill-name">PHP</span><span class="skill-type">LANGUAGE</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-laravel" aria-hidden="true"><img src="icons/skill-laravel.svg" alt="" /></span>
+              <span class="skill-name">Laravel</span><span class="skill-type">FRAMEWORK</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-codeigniter" aria-hidden="true"><img src="icons/skill-codeigniter.svg" alt="" /></span>
+              <span class="skill-name">CodeIgniter</span><span class="skill-type">FRAMEWORK</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-react" aria-hidden="true"><img src="icons/skill-react.svg" alt="" /></span>
+              <span class="skill-name">React</span><span class="skill-type">UI LIBRARY</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-angular" aria-hidden="true"><img src="icons/skill-angular.svg" alt="" /></span>
+              <span class="skill-name">Angular</span><span class="skill-type">FRAMEWORK</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-typescript" aria-hidden="true"><img src="icons/skill-typescript.svg" alt="" /></span>
+              <span class="skill-name">TypeScript</span><span class="skill-type">LANGUAGE</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-javascript" aria-hidden="true"><img src="icons/skill-javascript.svg" alt="" /></span>
+              <span class="skill-name">JavaScript</span><span class="skill-type">LANGUAGE</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-cicd" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M15 14H8v7m25 13h7v-7" /><path d="M9 20a16 16 0 0 1 27-8l4 4m-1 12a16 16 0 0 1-27 8l-4-4" /><path d="m17 24 5 5 10-12" /></svg></span>
+              <span class="skill-name">CI/CD</span><span class="skill-type">DELIVERY</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-aws" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 31V19a12 12 0 0 1 24 0v12" /><path d="M8 29h8v9H8zm24 0h8v9h-8zM13 42c7 3 15 3 22 0" /></svg></span>
+              <span class="skill-name">AWS</span><span class="skill-type">CLOUD</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-docker" aria-hidden="true"><img src="icons/skill-docker.svg" alt="" /></span>
+              <span class="skill-name">Docker</span><span class="skill-type">CONTAINERS</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-kubernetes" aria-hidden="true"><img src="icons/skill-kubernetes.svg" alt="" /></span>
+              <span class="skill-name">Kubernetes</span><span class="skill-type">ORCHESTRATION</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-rds" aria-hidden="true"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="12" rx="15" ry="6" /><path d="M9 12v23c0 4 7 7 15 7s15-3 15-7V12M9 23c0 4 7 7 15 7s15-3 15-7m-30 11c0 4 7 7 15 7s15-3 15-7" /></svg></span>
+              <span class="skill-name">Amazon RDS</span><span class="skill-type">DATABASE</span>
+            </article> 
+            <article class="skill-card">
+              <span class="skill-art skill-mysql" aria-hidden="true"><img src="icons/skill-mysql.svg" alt="" /></span>
+              <span class="skill-name">MySQL</span><span class="skill-type">DATABASE</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-linux" aria-hidden="true"><img src="icons/skill-linux.svg" alt="" /></span>
+              <span class="skill-name">Linux</span><span class="skill-type">PLATFORM</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-nginx" aria-hidden="true"><img src="icons/skill-nginx.svg" alt="" /></span>
+              <span class="skill-name">Nginx</span><span class="skill-type">WEB SERVER</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-apache" aria-hidden="true"><img src="icons/skill-apache.svg" alt="" /></span>
+              <span class="skill-name">Apache</span><span class="skill-type">WEB SERVER</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-web" aria-hidden="true"><img src="icons/skill-html.svg" alt="" /></span>
+              <span class="skill-name">HTML & CSS</span><span class="skill-type">WEB</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-art skill-bootstrap" aria-hidden="true"><img src="icons/skill-bootstrap.svg" alt="" /></span>
+              <span class="skill-name">Bootstrap</span><span class="skill-type">UI TOOLKIT</span>
+            </article>           
+            <article class="skill-card">
+              <span class="skill-art skill-perl" aria-hidden="true"><img src="icons/skill-perl.svg" alt="" /></span>
+              <span class="skill-name">Perl</span><span class="skill-type">LANGUAGE</span>
+            </article>
+          </div>
+          <p class="skills-hint">DRAG OR SCROLL TO EXPLORE <span aria-hidden="true">→</span></p>
+        </div>
+      </section>
+
+      <section class="experience-section section-shell section-pad" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> THE JOURNEY</p>
+            <h2 id="experience-title">Built step by step<span>.</span></h2>
+          </div>
+          <p class="section-aside">From shipping the code<br />to helping lead the team.</p>
+        </div>
+        <div class="experience-layout">
+          <div class="experience-summary">
+            <span class="experience-years">9<span>+</span></span>
+            <span class="experience-caption">YEARS OF<br />MAKING THINGS WORK</span>
+            <p>Growing from hands-on development into full-stack engineering, team leadership, and senior management.</p>
+            <div class="education-note">
+              <div>
+                <span class="education-icon">↗</span><span><small>UG</small>
+                  <b>B.C.A. - 2017</b><i>Quaid-E-Milleth College, Chennai</i>
+                </span>
+              </div>
+              <div>
+                <span class="education-icon">↗</span><span><small>HSC</small>
+                  <b>12th - 2014</b><i>Government Boys High Secondary School, Chromepet</i></span>
+              </div>
+              <div>
+                <span class="education-icon">↗</span><span><small>SSLC</small>
+                  <b>10th - 2012</b><i>Munipal High Secondary School, Pallavaram</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item current">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>JUL 2023 — PRESENT</span><span class="current-tag">CURRENT</span></div>
+              <h3>Senior Full Stack Developer & Senior Manager</h3><p class="timeline-company">Invoked Digital Pvt Ltd</p>
+              <p class="timeline-copy">Joined as a senior full-stack developer and promoted to senior manager. Balancing hands-on coding and DevOps with project and team leadership.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>NOV 2021 — MAY 2023</span></div>
+              <h3>Senior Full Stack Web Developer · Team Lead</h3><p class="timeline-company">Axion Technical Services Pvt Ltd</p>
+              <p class="timeline-copy">Built and maintained websites and web apps, including a real-time video-calling product, while leading a small developer team.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>FEB 2021 — NOV 2021</span></div>
+              <h3>Senior Full Stack Web Developer</h3><p class="timeline-company">Isys Technologies</p>
+              <p class="timeline-copy">Delivered two CodeIgniter web portals for L&T Chennai as part of a contract-based project.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>JUN 2019 — FEB 2021</span></div>
+              <h3>Web Developer</h3><p class="timeline-company">Infosearch BPO Services</p>
+              <p class="timeline-copy">Developed business applications, including attendance, data-collection, and lead-tracking portals, using CodeIgniter and Laravel.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>FEB 2019 — JUN 2019</span></div>
+              <h3>Web Developer</h3><p class="timeline-company">Yesbumpper Technology</p>
+              <p class="timeline-copy">Built websites and admin panels in PHP and CodeIgniter.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span><div class="timeline-meta"><span>JAN 2018 — JAN 2019</span></div>
+              <h3>Perl Developer</h3><p class="timeline-company">Marlen India Pvt Ltd</p>
+              <p class="timeline-copy">Developed web-crawling software, created Excel reports, and managed a small team.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit contact-orbit-one"></div><div class="contact-orbit contact-orbit-two"></div>
+        <div class="contact-content">
+          <p class="eyebrow"><span class="section-number">04</span> YOUR NEXT GREAT BUILD</p>
+          <h2 id="contact-title">Have a good<br />problem to solve<span>?</span></h2>
+          <p>I’d love to hear what you’re working on—and how I can help make it real.</p>
+          <a class="button button-dark" href="mailto:thameemansari2604@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:thameemansari2604@gmail.com"><span>EMAIL</span><b>thameemansari2604@gmail.com</b><i>↗</i></a>
+          <a href="tel:+916383710391"><span>PHONE</span><b>+91 63837 10391</b><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/thameem-ansari-j/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><b>Connect with me</b><i>↗</i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark footer-wordmark" href="#home" aria-label="Thameem Ansari home">
+        <svg class="wordmark-symbol" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M21 15c7 3 11 9 11 16 0 7-5 12-12 12-5 0-9-2-12-6 7 2 12-1 16-6 5-6 4-12-3-16Z" />
+          <path d="m28 1 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" />
+        </svg>
+        <span class="wordmark-name">THAMEEM ANSARI</span>
+      </a>
+      <span class="footer-tagline">FULL-STACK ENGINEERING · TEAM LEADERSHIP · DEVOPS</span>
+      <a href="#home">BACK TO TOP ↑</a>
+      <small>© <span id="year"></span> THAMEEM ANSARI</small>
+    </footer>
+  </body>
+</html>
